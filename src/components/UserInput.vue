@@ -3,6 +3,10 @@
     <p>{{ message }}</p>
     <button v-on:click="reverseIt">reverse</button>
 
+    <p>
+      <code>@click</code> is shorthand for <code>v-on:click</code>
+    </p>
+
     <hr>
 
     <form class="pure-form">

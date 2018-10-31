@@ -1,6 +1,7 @@
 <template>
   <div class="simple-template">
     <p>message: {{ message }}</p>
+    <p>message: <span v-html="message"/></p>
     <p>name: {{ theName }}</p>
     <p>now: {{ now }}</p>
     <span v-bind:title="now">hover over me</span>
@@ -18,7 +19,7 @@
     },
     data() {
       return {
-        message: "foo",
+        message: "<b>foo</b>",
         now: new Date().toLocaleString()
       }
     },
