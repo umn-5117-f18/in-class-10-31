@@ -9,11 +9,24 @@
 
     <hr>
 
-    <form class="pure-form">
+    <p>
+      example of the <code>.prevent</code> modifier
+    </p>
+
+    <a href v-on:click.prevent="reverseIt()">click the link</a>
+
+    <hr>
+
+    <form class="pure-form ">
       <input type="text" placeholder="enter text"
              v-model="theText">
-      here's what you've entered: {{ theText }}
+      <p>here's what you've entered: {{ theText }}</p>
+
+      <input type="checkbox" id="checkbox" v-model="checked">
+      <label for="checkbox">{{ checked }}</label>
+
     </form>
+
   </div>
 </template>
 
@@ -22,7 +35,9 @@
     data() {
       return {
         message: "hello, world",
-        theText: null
+        theText: null,
+        checked: false,
+        picked: null
       }
     },
     methods: {

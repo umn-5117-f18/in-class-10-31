@@ -4,7 +4,8 @@
     <!-- <simple-template the-name="hi" /> -->
     <!-- <conditional-and-loop /> -->
     <!-- <user-input/> -->
-    <computed-properties/>
+    <!-- <computed-properties/> -->
+    <parent-component/>
 
   </div>
 </template>
@@ -15,7 +16,8 @@
 // import SimpleTemplate from '@/components/SimpleTemplate.vue';
 // import ConditionalAndLoop from '@/components/ConditionalAndLoop.vue';
 // import UserInput from '@/components/UserInput.vue';
-import ComputedProperties from '@/components/ComputedProperties.vue';
+// import ComputedProperties from '@/components/ComputedProperties.vue';
+import ParentComponent from '@/components/ParentComponent.vue';
 
 export default {
   name: 'home',
@@ -24,7 +26,8 @@ export default {
     // SimpleTemplate,
     // ConditionalAndLoop,
     // UserInput,
-    ComputedProperties
+    // ComputedProperties,
+    ParentComponent
   }
 }
 </script>
