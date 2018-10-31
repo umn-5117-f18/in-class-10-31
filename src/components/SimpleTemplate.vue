@@ -11,6 +11,9 @@
 <script>
   export default {
     name: "simple-template",
+    created() {
+      console.log("created!");
+    },
     props: {
       theName: {
         type: String,
