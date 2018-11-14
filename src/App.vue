@@ -5,7 +5,8 @@
       <router-link to="/about">About</router-link> | 
       <router-link to="/third/foo">Third Page</router-link>&nbsp;
       <router-link to="/third/bar?a=hello">(1)</router-link>, 
-      <router-link to="/third/1-2-3 foo?a=1">(2)</router-link>
+      <router-link to="/third/1-2-3 foo?a=1">(2)</router-link>,
+      <router-link :to="{name: 'third', params: {name: 'param-name'}, query: {a: 777}}">(3)</router-link>
     </div>
     <router-view/>
   </div>
